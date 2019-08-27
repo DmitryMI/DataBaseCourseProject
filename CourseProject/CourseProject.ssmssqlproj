@@ -19,11 +19,23 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="ClearDb.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>ClearDb.sql</FullPath>
+        </FileNode>
         <FileNode Name="CreateDb.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>CreateDb.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FillTestData.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>FillTestData.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
