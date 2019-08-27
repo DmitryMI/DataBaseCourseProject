@@ -31,11 +31,47 @@
           <AssociatedConnUserName />
           <FullPath>CreateDb.sql</FullPath>
         </FileNode>
+        <FileNode Name="CreateIdentDataEntry.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>CreateIdentDataEntry.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CreatePasswordEntry.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>CreatePasswordEntry.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CreateVoiceDataEntry.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>CreateVoiceDataEntry.sql</FullPath>
+        </FileNode>
         <FileNode Name="FillTestData.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>FillTestData.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetAccessibleLocations_create.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetAccessibleLocations_create.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetAccessibleLocations_example.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetAccessibleLocations_example.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RegisterUser.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>RegisterUser.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

@@ -39,6 +39,20 @@ create table IdentData
 	VoiceDataId int unique not null
 )
 
+--drop table PwdData
+create table PwdData
+(
+	Id INT PRIMARY KEY identity(1, 1),
+	PasswordHash VARCHAR(32) not null
+)
+
+--drop table VoiceData
+create table VoiceData
+(
+	Id INT PRIMARY KEY identity(1, 1),
+	VoiceSample VARBINARY(8000)
+)
+
 create table SecLevel
 (
 	Id INT PRIMARY KEY identity(1, 1),
@@ -57,11 +71,6 @@ create table DbAccessLevel
 
 -- References
 
--- Locations: SecLevelId
-/*alter table Locations
-add constraint FK_Locations_SecLevel
-foreign key (SecLevelId) references SecLevel(Id)
-*/
 
 -- AccessRules
 alter table AccessRules
@@ -78,14 +87,18 @@ alter table Users
 add constraint FK_Users_IdentData
 foreign key (IdentDataId) references IdentData(Id)
 
--- SecLevelId
-/*alter table Users
-add constraint FK_Locations_SecLevel
-foreign key (SecLevelId) references SecLevel(Id)*/
-
 -- DbAccessLevelId
 alter table Users
 add constraint FK_Users_DbAccessLevel
 foreign key (DbAccessLevelId) references DbAccessLevel(Id)
+
+-- Ident data
+alter table IdentData
+add constraint FK_IdentData_PwdData
+foreign key (PwdDataId) references PwdData(Id)
+
+alter table IdentData
+add constraint FK_IdentData_VoiceData
+foreign key (VoiceDataId) references VoiceData(Id)
 
 

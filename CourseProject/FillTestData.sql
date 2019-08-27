@@ -8,56 +8,86 @@ insert into DbAccessLevel values
 	'This user has no access to data base',
 	0
 )
-
-insert into DbAccessLevel values
+,
 (
 	'User',	-- Level name
 	'This user has read-only access to data base',
 	1
 )
-
-insert into DbAccessLevel values
+,
 (
 	'Administrator',	-- Level name
 	'This user has read/write access to data base, except user management',
 	2
 )
-
-insert into DbAccessLevel values
+,
 (
 	'Owner',	-- Level name
 	'This user has full access to data base, including user management',
 	3
 )
 
+-- Creating passwords
+insert into PwdData values
+(
+	'5EB63BBBE01EEED093CB22BB8F5ACDC3' -- hello world
+),
+(
+	'96B409DBA2B20544DF077F08D365F0BA' -- privet mir
+),
+(
+	'25D55AD283AA400AF464C76D713C07AD' -- 12345678
+),
+(
+	'5E8667A439C68F5145DD2FCBECF02209' -- 87654321
+),
+(
+	'ABC35B8D78A399C86D96ED0B78B44FAE' -- get out of here
+),
+(
+	'E220BEBB7182E0F9CDDA2CAA04B532D8' -- <secret>
+)
+
+insert into VoiceData values
+(
+	NULL
+),
+(
+	NULL
+),
+(
+	NULL
+),
+(
+	NULL
+),
+(
+	NULL
+),
+(
+	NULL
+)
+
+
+
 
 -- Filling IdentData
 insert into IdentData values
 (
 	1, 1
-)
-
-insert into IdentData values
+),
 (
 	2, 2
-)
-
-insert into IdentData values
+),
 (
 	3, 3
-)
-
-insert into IdentData values
+),
 (
 	4, 4
-)
-
-insert into IdentData values
+),
 (
 	5, 5
-)
-
-insert into IdentData values
+),
 (
 	6, 6
 )
@@ -66,46 +96,41 @@ insert into IdentData values
 -- Fill Users
 insert into Users values
 ('Victor', 'Petrovich', 'Sidorov', 1, 1, 1)				-- Watchman
-
-insert into Users values
+,
 ('Vladimir', 'Ivanovich', 'Petrov', 2, 1, 1)			-- Watchman
-
-insert into Users values
+,
 ('Ivan', 'Sergeevich', 'Ivanushkin', 3, 2, 2)				-- Security chief
-
-insert into Users values
+,
 ('Vladislav', 'Vladimirovich', 'Petushkov', 4, 3, 1)		-- Storage guard
-
-insert into Users values
+,
 ('Vadim', 'Vladimirovich', 'Levada', 5, 4, 3)				-- Facility director
-
-insert into Users values
+,
 ('Dmitry', 'Igorevich', 'Monakhov', 6, 5, 3)				-- Owner
 
 
 
 -- Fill SecLevels
-insert into SecLevel values -- 1
+insert into SecLevel values 
+	-- 1
+(
+	'None', 'Security level unset. Must be changed by administration'
+),	-- 2
 (
 	'Watchman', 'This person patrols area'
 )
-
-insert into SecLevel values -- 2
+,	-- 3
 (
 	'Security chief', 'This person controls work of other watchmen'
 )
-
-insert into SecLevel values -- 3
+,	-- 4
 (
 	'Storage guard', 'This person guards the storage insides'
 )
-
-insert into SecLevel values -- 4
+,	-- 5
 (
 	'Director', 'Territory director, full access, except owners office'
 )
-
-insert into SecLevel values -- 5
+,	-- 6
 (
 	'Owner', 'Full access'
 )
@@ -116,13 +141,11 @@ insert into Locations values
 (
 	'Outdoors'
 )
-
-insert into Locations values
+,
 (
 	'Storage'
 )
-
-insert into Locations values
+,
 (
 	'Owners office'
 )
@@ -132,43 +155,35 @@ insert into AccessRules values
 (
 	1, 1 -- Watchman -> Outdoors
 )
-
-insert into AccessRules values
+,
 (
 	2, 1 -- Security chief -> Outdoors
 )
-
-insert into AccessRules values
+,
 (
 	3, 1 -- Storage guard -> Outdoors
 )
-
-insert into AccessRules values
+,
 (
 	3, 2 -- Storage guard -> Storage
 )
-
-insert into AccessRules values
+,
 (
 	4, 1 -- Director -> Outdoors
 )
-
-insert into AccessRules values
+,
 (
 	4, 2 -- Director -> Storage
 )
-
-insert into AccessRules values
+,
 (
 	5, 1 -- Owner -> Outdoors
 )
-
-insert into AccessRules values
+,
 (
 	5, 2 -- Owner -> Storage
 )
-
-insert into AccessRules values
+,
 (
 	5, 3 -- Owner -> Owner's office
 )
