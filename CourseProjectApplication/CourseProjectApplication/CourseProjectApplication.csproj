@@ -55,7 +55,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecSystem\AccessDeniedExceptions.cs" />
+    <Compile Include="SecSystem\Location.cs" />
+    <Compile Include="SecSystem\SecSystemBridge.cs" />
     <Compile Include="SecSystem\User.cs" />
+    <Compile Include="SecSystem\UserName.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
