@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CourseProjectApplication.SecSystem
 {
-    struct UserName
+    public struct UserName
     {
         public string FirstName;
         public string MiddleName;

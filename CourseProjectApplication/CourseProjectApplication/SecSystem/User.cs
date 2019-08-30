@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CourseProjectApplication.SecSystem
 {
-    class User
+    public class User
     {
         private int _id;
         private string _firstName;

@@ -95,17 +95,19 @@ insert into IdentData values
 
 -- Fill Users
 insert into Users values
-('Victor', 'Petrovich', 'Sidorov', 1, 1, 1)				-- Watchman
+('Victor', 'Petrovich', 'Sidorov', 1, 2, 1)				-- Watchman
 ,
-('Vladimir', 'Ivanovich', 'Petrov', 2, 1, 1)			-- Watchman
+('Vladimir', 'Ivanovich', 'Petrov', 2, 2, 1)			-- Watchman
 ,
 ('Ivan', 'Sergeevich', 'Ivanushkin', 3, 2, 2)				-- Security chief
 ,
-('Vladislav', 'Vladimirovich', 'Petushkov', 4, 3, 1)		-- Storage guard
+('Vladislav', 'Vladimirovich', 'Petushkov', 4, 4, 1)		-- Storage guard
 ,
-('Vadim', 'Vladimirovich', 'Levada', 5, 4, 3)				-- Facility director
+('Vadim', 'Vladimirovich', 'Levada', 5, 5, 3)				-- Facility director
 ,
-('Dmitry', 'Igorevich', 'Monakhov', 6, 5, 3)				-- Owner
+('Dmitry', 'Igorevich', 'Monakhov', 6, 6, 3)				-- Owner
+
+delete from Users
 
 
 
@@ -151,41 +153,43 @@ insert into Locations values
 )
 
 -- Fille AccessRules
+
+delete from AccessRules
 insert into AccessRules values
 (
-	1, 1 -- Watchman -> Outdoors
+	2, 1 -- Watchman -> Outdoors
 )
 ,
 (
-	2, 1 -- Security chief -> Outdoors
+	3, 1 -- Security chief -> Outdoors
 )
 ,
 (
-	3, 1 -- Storage guard -> Outdoors
+	4, 1 -- Storage guard -> Outdoors
 )
 ,
 (
-	3, 2 -- Storage guard -> Storage
+	4, 2 -- Storage guard -> Storage
 )
 ,
 (
-	4, 1 -- Director -> Outdoors
+	5, 1 -- Director -> Outdoors
 )
 ,
 (
-	4, 2 -- Director -> Storage
+	5, 2 -- Director -> Storage
 )
 ,
 (
-	5, 1 -- Owner -> Outdoors
+	6, 1 -- Owner -> Outdoors
 )
 ,
 (
-	5, 2 -- Owner -> Storage
+	6, 2 -- Owner -> Storage
 )
 ,
 (
-	5, 3 -- Owner -> Owner's office
+	6, 3 -- Owner -> Owner's office
 )
 
 
