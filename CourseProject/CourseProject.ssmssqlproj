@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="AddAccessibleLocation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>AddAccessibleLocation.sql</FullPath>
+        </FileNode>
         <FileNode Name="CheckLoginData.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
@@ -43,11 +49,23 @@
           <AssociatedConnUserName />
           <FullPath>CreateIdentDataEntry.sql</FullPath>
         </FileNode>
+        <FileNode Name="CreateLocation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>CreateLocation.sql</FullPath>
+        </FileNode>
         <FileNode Name="CreatePasswordEntry.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>CreatePasswordEntry.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CreateSecLevel.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>CreateSecLevel.sql</FullPath>
         </FileNode>
         <FileNode Name="CreateVoiceDataEntry.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
@@ -73,17 +91,65 @@
           <AssociatedConnUserName />
           <FullPath>GetAccessibleLocations_example.sql</FullPath>
         </FileNode>
+        <FileNode Name="GetAccessRules.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetAccessRules.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetLocationById.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetLocationById.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetLocations.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetLocations.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetSecLevelById.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetSecLevelById.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetSecLevelLocations.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetSecLevelLocations.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetSecLevels.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetSecLevels.sql</FullPath>
+        </FileNode>
         <FileNode Name="GetUserById.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>GetUserById.sql</FullPath>
         </FileNode>
+        <FileNode Name="GetUsers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetUsers.sql</FullPath>
+        </FileNode>
         <FileNode Name="RegisterUser.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>RegisterUser.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RemoveAccessibleLocation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>RemoveAccessibleLocation.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

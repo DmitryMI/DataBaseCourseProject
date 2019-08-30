@@ -107,9 +107,6 @@ insert into Users values
 ,
 ('Dmitry', 'Igorevich', 'Monakhov', 6, 6, 3)				-- Owner
 
-delete from Users
-
-
 
 -- Fill SecLevels
 insert into SecLevel values 

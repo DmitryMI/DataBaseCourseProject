@@ -1,3 +1,3 @@
 use SecSystem
 
-select * from GetAccessibleLocations(6)
+select * from GetAccessibleLocations(10)
