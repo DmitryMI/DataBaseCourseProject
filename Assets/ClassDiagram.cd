@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CourseProjectApplication.SecSystem.AccessDeniedExceptions">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecSystem\AccessDeniedExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.SecSystem.Location">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAAEAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecSystem\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.SecSystem.SecLevel">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAgAAAEAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecSystem\SecLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.SecSystem.SecSystemBridge">
+    <Position X="8.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAQAAEAKAAggAAABAAEIKIgAAAAACAAAACAAAAAQAAA=</HashCode>
+      <FileName>SecSystem\SecSystemBridge.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CourseProjectApplication.SecSystem.SecSystemBuilder">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecSystem\SecSystemBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.SecSystem.User">
+    <Position X="10" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAEAAAAIAGAAAAQFQAAABAAAAAAAACAAAAAAgAAg=</HashCode>
+      <FileName>SecSystem\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.Ui.EditAccessRule">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgACBAAACEAABAAMICAAcACIAggACCAAECAAIAACEE=</HashCode>
+      <FileName>Ui\EditAccessRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.Ui.ListViewItemWithId">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ui\ListViewItemWithId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.Ui.MainForm">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAABAEASUEABgAEIDAQBADIAAAAQAKAACIAAAAgkA=</HashCode>
+      <FileName>Ui\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseProjectApplication.LoginForm">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAAAIAQACAAAACAwEgIggEAAAAAAAAAAA=</HashCode>
+      <FileName>Ui\LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="CourseProjectApplication.SecSystem.UserName">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>SecSystem\UserName.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="CourseProjectApplication.SecSystem.ISecSystem">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQAAEAKAAggAAABAAEIKIAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>SecSystem\ISecSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
