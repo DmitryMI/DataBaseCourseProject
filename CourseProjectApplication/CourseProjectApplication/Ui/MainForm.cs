@@ -82,6 +82,15 @@ namespace CourseProjectApplication.Ui
 
         private void ProcessUserSelection()
         {
+            if (UsersList.SelectedItems.Count != 1)
+            {
+                EditVoiceSamples.Enabled = false;
+            }
+            else
+            {
+                EditVoiceSamples.Enabled = true;
+            }
+
             if(UsersList.SelectedItems.Count < 1)
                 return;
 
@@ -165,6 +174,18 @@ namespace CourseProjectApplication.Ui
         {
             EditAccessRule editor = new EditAccessRule(_secSystem, null);
             editor.ShowDialog();
+        }
+
+        private void EditVoiceSamples_Click(object sender, EventArgs e)
+        {
+            if (UsersList.SelectedItems.Count != 1)
+                return;
+
+            ListViewItemWithId item = (ListViewItemWithId) UsersList.SelectedItems[0];
+            int userId = item.Id;
+
+            VoiceSampleEditor editorForm = new VoiceSampleEditor(userId, _secSystem);
+            editorForm.ShowDialog();
         }
     }
 }

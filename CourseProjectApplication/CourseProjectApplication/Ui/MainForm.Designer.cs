@@ -36,13 +36,14 @@
             this.registeredUsersLabel = new System.Windows.Forms.Label();
             this.UsersList = new System.Windows.Forms.ListView();
             this.LocationsTab = new System.Windows.Forms.TabPage();
+            this.EditSecRolesButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.AddLocationNameBox = new System.Windows.Forms.TextBox();
             this.AddLocationButton = new System.Windows.Forms.Button();
             this.LoadLocationsButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.LocationsList = new System.Windows.Forms.ListView();
-            this.EditSecRolesButton = new System.Windows.Forms.Button();
+            this.EditVoiceSamples = new System.Windows.Forms.Button();
             this.MainTabControl.SuspendLayout();
             this.UsersTab.SuspendLayout();
             this.LocationsTab.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // UsersTab
             // 
+            this.UsersTab.Controls.Add(this.EditVoiceSamples);
             this.UsersTab.Controls.Add(this.locationsListLabel);
             this.UsersTab.Controls.Add(this.AccessibleLocationsList);
             this.UsersTab.Controls.Add(this.LoadUsersButton);
@@ -137,6 +139,16 @@
             this.LocationsTab.Text = "Locations";
             this.LocationsTab.UseVisualStyleBackColor = true;
             // 
+            // EditSecRolesButton
+            // 
+            this.EditSecRolesButton.Location = new System.Drawing.Point(415, 88);
+            this.EditSecRolesButton.Name = "EditSecRolesButton";
+            this.EditSecRolesButton.Size = new System.Drawing.Size(294, 23);
+            this.EditSecRolesButton.TabIndex = 9;
+            this.EditSecRolesButton.Text = "Edit security rules";
+            this.EditSecRolesButton.UseVisualStyleBackColor = true;
+            this.EditSecRolesButton.Click += new System.EventHandler(this.EditSecRolesButton_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -191,15 +203,16 @@
             this.LocationsList.UseCompatibleStateImageBehavior = false;
             this.LocationsList.View = System.Windows.Forms.View.List;
             // 
-            // EditSecRolesButton
+            // EditVoiceSamples
             // 
-            this.EditSecRolesButton.Location = new System.Drawing.Point(415, 88);
-            this.EditSecRolesButton.Name = "EditSecRolesButton";
-            this.EditSecRolesButton.Size = new System.Drawing.Size(294, 23);
-            this.EditSecRolesButton.TabIndex = 9;
-            this.EditSecRolesButton.Text = "Edit security rules";
-            this.EditSecRolesButton.UseVisualStyleBackColor = true;
-            this.EditSecRolesButton.Click += new System.EventHandler(this.EditSecRolesButton_Click);
+            this.EditVoiceSamples.Enabled = false;
+            this.EditVoiceSamples.Location = new System.Drawing.Point(646, 371);
+            this.EditVoiceSamples.Name = "EditVoiceSamples";
+            this.EditVoiceSamples.Size = new System.Drawing.Size(116, 23);
+            this.EditVoiceSamples.TabIndex = 5;
+            this.EditVoiceSamples.Text = "Голосовые данные";
+            this.EditVoiceSamples.UseVisualStyleBackColor = true;
+            this.EditVoiceSamples.Click += new System.EventHandler(this.EditVoiceSamples_Click);
             // 
             // MainForm
             // 
@@ -235,6 +248,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView LocationsList;
         private System.Windows.Forms.Button EditSecRolesButton;
+        private System.Windows.Forms.Button EditVoiceSamples;
     }
 }
 

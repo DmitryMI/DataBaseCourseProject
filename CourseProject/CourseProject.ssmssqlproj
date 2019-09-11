@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="_ChangeVoiceDataLength.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>_ChangeVoiceDataLength.sql</FullPath>
+        </FileNode>
         <FileNode Name="AddAccessibleLocation.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
@@ -139,6 +145,12 @@
           <AssociatedConnUserName />
           <FullPath>GetUsers.sql</FullPath>
         </FileNode>
+        <FileNode Name="GetVoiceSample.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>GetVoiceSample.sql</FullPath>
+        </FileNode>
         <FileNode Name="RegisterUser.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
@@ -150,6 +162,12 @@
           <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>RemoveAccessibleLocation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SetVoiceSample.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DMITRYBIGPC:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DMITRYBIGPC</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SetVoiceSample.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

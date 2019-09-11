@@ -25,6 +25,9 @@ namespace CourseProjectApplication.SecSystem
         IList<Location> GetSecLevelLocations(SecLevel secLevel);
         IList<Location> GetSecLevelLocations(int secLevelId);
 
+        byte[] GetVoiceSample(int userId);
+        int SetVoiceSample(int userId, byte[] voiceSample);
+
         void LoginAs(string userId, string password);
         bool LoginSuccessful { get; }
     }

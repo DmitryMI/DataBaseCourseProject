@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
@@ -374,6 +375,60 @@ namespace CourseProjectApplication.SecSystem
             reader.Close();
 
             return result;
+        }
+
+        public byte[] GetVoiceSample(int userId)
+        {
+            string query = "select VoiceData.VoiceSample\r\n" +
+                           "\t\t\tfrom\r\n" +
+                           "\t\t\t\tUsers\r\n" +
+                           "\t\t\t\tjoin\r\n" +
+                           "\t\t\t\tIdentData on Users.IdentDataId = IdentData.Id\r\n" +
+                           "\t\t\t\tjoin\r\n" +
+                           "\t\t\t\tVoiceData on IdentData.VoiceDataId = VoiceData.Id\r\n" +
+                           $"\t\t\twhere Users.Id = {userId}";
+
+            SqlCommand cmd = new SqlCommand(query, _sqlConnection);
+            var reader = cmd.ExecuteReader();
+            byte[] result = null;
+            if (reader.Read())
+            {
+                SqlBytes bytes = reader.GetSqlBytes(0);
+                if(!bytes.IsNull)
+                    result = bytes.Value;
+            }
+
+            reader.Close();
+
+            return result;
+        }
+
+        public int SetVoiceSample(int userId, byte[] voiceSample)
+        {
+            SqlCommand cmd = new SqlCommand("SetVoiceSample", _sqlConnection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter userIdParam = new SqlParameter("@userId", SqlDbType.Int);
+            userIdParam.Value = userId;
+            cmd.Parameters.Add(userIdParam);
+
+            SqlParameter voiceSampleParam = new SqlParameter("@voiceSample", SqlDbType.VarBinary, voiceSample.Length);
+            /*SqlParameter voiceSampleParam = new SqlParameter();
+            voiceSampleParam.ParameterName = "@voiceSample";
+            //voiceSampleParam.TypeName = "varbinary(max)";
+            voiceSampleParam.Direction = ParameterDirection.Input;
+            voiceSampleParam.Value = voiceSample;*/
+            voiceSampleParam.Value = voiceSample;
+            cmd.Parameters.Add(voiceSampleParam);
+
+            SqlParameter resultParam = new SqlParameter("@Id", SqlDbType.Int);
+            resultParam.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(resultParam);
+
+            cmd.ExecuteNonQuery();
+            int voiceSampleId = (int)resultParam.Value;
+
+            return voiceSampleId;
         }
 
         public void LoginAs(string userId, string password)

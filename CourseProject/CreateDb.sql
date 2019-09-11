@@ -50,7 +50,7 @@ create table PwdData
 create table VoiceData
 (
 	Id INT PRIMARY KEY identity(1, 1),
-	VoiceSample VARBINARY(8000)
+	VoiceSample VARBINARY(max)
 )
 
 create table SecLevel
