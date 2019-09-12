@@ -15,27 +15,11 @@ namespace CourseProjectApplication.SecSystem
     {
         //public const string ConnectionString = "Data Source=DESKTOP-7C0V9B9;Initial Catalog=EngineChemicals;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         //public const string ConnectionString = "Data Source=DMITRYBIGPC;Initial Catalog=SecSystem;Integrated Security=True;Connect Timeout=10;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        public const string ConnectionString = "Data Source=DMITRYBIGPC;Initial Catalog=SecSystem;Integrated Security=False;Connect Timeout=10;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public const string ConnectionString = "Data Source=DESKTOP-7C0V9B9;Initial Catalog=SecSystem;Integrated Security=False;Connect Timeout=10;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public const string ConnectionStringWath = "Data Source=DESKTOP-7C0V9B9;Initial Catalog=SecSystem;Integrated Security=True;Connect Timeout=10;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        private const string SqlConnectionString =
-            "Data Source=DMITRYBIGPC;Initial Catalog=SecSystem;Integrated Security=SSPI;User ID={0};Password={1};";
 
         private SqlConnection _sqlConnection;
-
-        private string GetConnectionString(string domain, string login, string password)
-        {
-            string userId;
-            if (String.IsNullOrWhiteSpace(domain))
-            {
-                userId = login;
-            }
-            else
-            {
-                userId = $"{domain}\\login";
-            }
-
-            return String.Format(SqlConnectionString, userId, password);
-        }
 
         public User GetUserById(int userId)
         {
@@ -463,6 +447,14 @@ namespace CourseProjectApplication.SecSystem
             catch (Exception ex)
             {
                 Debug.WriteLine("Exception: " + ex.Message);
+            }
+            finally
+            {
+                if(_sqlConnection == null || (_sqlConnection.State != ConnectionState.Connecting && _sqlConnection.State != ConnectionState.Open))
+                {
+                    _sqlConnection = new SqlConnection(ConnectionStringWath);
+                    _sqlConnection.Open();
+                }
             }
         }
 
